@@ -12,6 +12,8 @@ Built by a supply chain architect with 15+ years of hands-on experience in Oracl
 
 An automated agent that monitors WMS-to-ERP ship confirmation pipelines, detects failures, classifies root causes, and recommends corrective actions — all without manual investigation.
 
+> Failure patterns based on real-world WMS/ERP integration experience across enterprise logistics environments.
+
 #### What it does:
 - Connects to your Oracle database and scans the ship confirm staging table
 - Automatically classifies failures into known patterns
