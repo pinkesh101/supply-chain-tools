@@ -13,9 +13,7 @@ It's the action-side companion to a rate-inquiry agent: where rate inquiry answe
 
 These actions are called **directly** against the Logistics REST `custom-actions` surface using a **staged integration user over HTTP Basic auth**. That means:
 
-- **No Fusion UI** in the path.
-- **No IDCS confidential app / Agent Studio subscription.** OTM 26B also ships these actions wired into Fusion AI Agent Studio, but that route needs Fusion IDCS admin and (for new/customized agents) an extra subscription. The direct REST path needs neither — only an integration user with the right ACLs.
-
+OTM 26B exposes these actions for integration and AI-agent workflows. This client calls them directly against the Logistics REST custom-actions surface using a staged integration user over HTTP Basic auth — no Fusion UI in the path, only the relevant ACLs granted to the integration user.
 This mirrors the architecture of the companion `otm-riq-agent`, which hits `riqRateAndRoute` the same way — proving the full rate-shop -> tender lifecycle can be driven over REST with nothing more than an integration user.
 
 ## What OTM actually does
