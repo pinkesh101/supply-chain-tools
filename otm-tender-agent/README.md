@@ -11,10 +11,9 @@ It's the action-side companion to a rate-inquiry agent: where rate inquiry answe
 
 ## Why this approach
 
-These actions are called **directly** against the Logistics REST `custom-actions` surface using a **staged integration user over HTTP Basic auth**. That means:
+These actions are called **directly** against the Logistics REST `custom-actions` surface using a **staged integration user over HTTP Basic auth** — no middleware, no UI in the path, only the relevant ACLs granted to the integration user.
 
-OTM 26B exposes these actions for integration and AI-agent workflows. This client calls them directly against the Logistics REST custom-actions surface using a staged integration user over HTTP Basic auth — no Fusion UI in the path, only the relevant ACLs granted to the integration user.
-This mirrors the architecture of the companion `otm-riq-agent`, which hits `riqRateAndRoute` the same way — proving the full rate-shop -> tender lifecycle can be driven over REST with nothing more than an integration user.
+This mirrors the architecture of the companion `otm-riq-agent`, which hits `riqRateAndRoute` the same way — so the full rate-shop → tender lifecycle can be driven over REST with nothing more than an integration user.
 
 ## What OTM actually does
 
